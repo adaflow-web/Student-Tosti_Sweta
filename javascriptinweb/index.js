@@ -35,6 +35,9 @@ const myText = document.getElementById("myText");
 // myButton.addEventListener("click", changeTitle);
 
 //Anoy function
-myButton.addEventListener("click", function(){
+// myButton.addEventListener("click", function(){
+//     title.innerText = myText.value;
+// });
+title.addEventListener("click", function(){
     title.innerText = myText.value;
 });
