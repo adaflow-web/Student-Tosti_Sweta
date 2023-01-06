@@ -1,0 +1,45 @@
+body{
+    font-family: Arial;
+    font-size: 16px ;
+}
+.navigation {
+    text-align: end;
+}
+.link{
+    color:red;
+}
+
+h1{
+    font-size: 34;
+    text-align: center;
+    color:rgb(242, 238, 238);
+    background: local;
+    background-color: rgb(227, 5, 5);
+    border: 1pt;
+    border-style: solid;
+    border-color: aqua;
+}
+.colorunder{
+    color: green;
+    text-decoration: underline;
+    font-family: Georgia;
+}
+#emails{
+    text-align: center;
+    font-style: italic;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;  
+}
+
+#second{
+    color : #ed0505;
+    text-align: left;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(230, 234, 234);
+
+}
