@@ -1,0 +1,42 @@
+
+#content{
+    background-color: rgb(49, 48, 49);
+    text-align: center;
+}
+#newClass{
+    text-align: center;
+    background-color: rgb(55, 31, 1);
+
+}
+
+#myText{
+    display:block;
+    margin: auto;
+    width: 180px;
+    
+}
+
+#addItem{
+    color: white;
+    background-color: darkgreen;
+    width: 80px;
+}
+
+
+#removeItem{
+    color: white;
+    background-color: rgb(226, 91, 8);
+    text-shadow: 0ch;
+    width:150px;
+}
+
+#clearAll{
+    color: rgb(239, 233, 233);
+    background-color: rgb(235, 5, 5);
+    width: 80px;
+}
+#myButton{
+    display:flex;
+    justify-items: center;
+    
+}
