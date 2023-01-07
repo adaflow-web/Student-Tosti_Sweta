@@ -1,13 +1,16 @@
 
-#content{
+.newClass{
     background-color: rgb(49, 48, 49);
     text-align: center;
+    color: beige;
 }
-#newClass{
+.myButton{
+    padding: 15px 32px;
     text-align: center;
-    background-color: rgb(55, 31, 1);
-
+    font-size: 16px;
+    
 }
+
 
 #myText{
     display:block;
@@ -35,8 +38,4 @@
     background-color: rgb(235, 5, 5);
     width: 80px;
 }
-#myButton{
-    display:flex;
-    justify-items: center;
-    
-}
+
