@@ -19,5 +19,4 @@ function removePara(){
     }
 
 }
-console.log("Htlll");
 removeButton.addEventListener("click", removePara);
