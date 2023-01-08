@@ -1,0 +1,38 @@
+.nice{
+    color: rgb(231, 231, 241);
+    /* background-color: gray; */
+    text-align: center;
+    font-size: 20px;
+}
+#para{
+    background-color: gray;
+}
+#add{
+    background-color: green;
+    text-align: center;
+    justify-content: center;
+}
+#last{
+    background-color: yellowgreen;
+    text-align: center;
+}
+#first{
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+}
+#clearme{
+    background-color: red;
+    text-align: center;
+    display: flex;
+}
+#action{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35%;
+    font-size: 20px;
+    
+}
+#Text{
+    font-size: 20px;
+}

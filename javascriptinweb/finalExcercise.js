@@ -4,7 +4,6 @@ const removeItem = document.getElementById("removeItem");
 const myText = document.getElementById("myText");
 const clearAll = document.getElementById("clearAll");
 
-
 function addContent(){
     const paragraph = document.createElement("p");
     paragraph.innerText = myText.value;
@@ -12,11 +11,10 @@ function addContent(){
     content.appendChild(paragraph);
     paragraph.className = "newClass";
     if (myText.value.length != 0){
-        myText.value = "";
+        myText.value = null;
         
     }
-     
-    
+       
 }
 addItem.addEventListener("click", addContent);
 

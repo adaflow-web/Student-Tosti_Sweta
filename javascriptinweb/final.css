@@ -1,14 +1,17 @@
-
 .newClass{
     padding: 8px;
     text-align: center;
-    background-color: rgb(1, 51, 51);
-    color: rgb(240, 240, 236);
-    font-size: 20px;
+    color: rgb(250, 250, 245);
+    font-size: large;
+}
+#content{
+    background-color: rgb(49, 48, 49);
+
 }
 #myText{
     display:block;
-    margin: auto;d
+    margin: auto;
+    margin: auto;
     width: 180px;
     color: gray;   
 }
@@ -35,5 +38,3 @@
     background-color: rgb(235, 5, 5);
     width: 80px;
 }
-
-
