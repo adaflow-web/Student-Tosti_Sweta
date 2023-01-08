@@ -11,13 +11,8 @@ function addContent(){
     content.appendChild(paragraph);
     paragraph.className = "newClass";
     if (myText.value.length != 0){
-<<<<<<< HEAD
         myText.value = null;  
-    }      
-=======
-        myText.value = "";        
-    }   
->>>>>>> 704dbfbc03852b256490ae53fbc405490a20dacd
+    }             
 }
 
 addItem.addEventListener("click", addContent);
