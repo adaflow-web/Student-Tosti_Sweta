@@ -8,8 +8,15 @@ const clearAll = document.getElementById("clearAll");
 function addContent(){
     const paragraph = document.createElement("p");
     paragraph.innerText = myText.value;
+    localStorage.setItem("Item", paragraph);
     content.appendChild(paragraph);
     paragraph.className = "newClass";
+    if (myText.value.length != 0){
+        myText.value = "Enter an item...";
+        
+    }
+    
+    
     
 }
 addItem.addEventListener("click", addContent);
@@ -22,3 +29,9 @@ function removeContent(){
     }
 }
 removeItem.addEventListener("click", removeContent);
+
+function empty(){
+    document.getElementById("content").innerHTML = "";
+}
+
+clearAll.addEventListener("click", empty)
