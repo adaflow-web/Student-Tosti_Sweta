@@ -1,13 +1,14 @@
 
 .newClass{
-    background-color: rgb(49, 48, 49);
+    padding: 8px;
     text-align: center;
-    color: beige;
-    border: vmax;
+    background-color: rgb(1, 51, 51);
+    color: rgb(240, 240, 236);
+    font-size: 20px;
 }
 #myText{
     display:block;
-    margin: auto;
+    margin: auto;d
     width: 180px;
     color: gray;   
 }

@@ -12,11 +12,10 @@ function addContent(){
     content.appendChild(paragraph);
     paragraph.className = "newClass";
     if (myText.value.length != 0){
-        myText.value = "Enter an item...";
+        myText.value = "";
         
     }
-    
-    
+     
     
 }
 addItem.addEventListener("click", addContent);
