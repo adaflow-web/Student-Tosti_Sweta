@@ -3,40 +3,36 @@
     background-color: rgb(49, 48, 49);
     text-align: center;
     color: beige;
+    border: vmax;
 }
-.myButton{
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    
-}
-
-
 #myText{
     display:block;
     margin: auto;
     width: 180px;
-    color: gray;
-    
+    color: gray;   
 }
-
+#outer{
+    width:100;
+    text-align: center;
+}
+.inner{
+    display: inline block;
+}
 #addItem{
     color: white;
     background-color: darkgreen;
     width: 80px;
 }
-
-
 #removeItem{
     color: white;
     background-color: rgb(226, 91, 8);
     text-shadow: 0ch;
     width:150px;
 }
-
 #clearAll{
     color: rgb(239, 233, 233);
     background-color: rgb(235, 5, 5);
     width: 80px;
 }
+
 
