@@ -1,0 +1,42 @@
+.myClass{
+    background-color: rgb(11, 26, 1);
+    color:goldenrod;
+    text-align: center;
+    font-size: x-large;
+    padding: 1px;
+}
+#myText{
+    display: block;
+    margin: auto;
+    width: 120px;
+    color: rgb(17, 2, 2);  
+    gap :50 px;
+    height: 30px;
+    line-height: 1px;  
+}
+
+.outer{
+    text-align: center;
+}
+.inner{
+    color: white;
+    display: inline block;
+    height: 28px;
+    font-size:medium;
+}
+
+#add{
+    background-color: green;
+    width: 80px;  
+    line-height: .7;
+}
+
+#deleteLast{
+    background-color:orangered;
+    width: 150px;   
+}
+
+#clearAll{
+    background-color:rgb(243, 2, 2);
+    width :80px;  
+}
