@@ -43,6 +43,7 @@ deleteLast.addEventListener("click", deleteLastElement);
 
 function deleteAll(content){
     const element = document.getElementsByClassName("myClass");
+    localStorage.clear();
     let i = 0;
     while (i != element.length){
         element[i].innerText = "";
