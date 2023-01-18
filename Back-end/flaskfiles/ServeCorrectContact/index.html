@@ -8,12 +8,16 @@
 </head>
 <body>
     
-    <h1 style="background-color: rgb(23, 54, 2); left: 11cm; color: antiquewhite; padding: 2ch;" >
-        Welcome to my Address Book app</h1>
+    <h1>Welcome to my Address Book app</h1>
     <hr>
     <div>
-        <p><a href="Clients.html" >See all contacts</a></p>
+        <p><a href="/contacts" >See all contacts</a></p>
     </div>
+    <form action="/search" method="get">
+        <input type="text" placeholder ="Enter a name..." name = "clientname" >
+        <input type="submit" value="Search">
+    </form>
+
     
 </body>
 </html>
