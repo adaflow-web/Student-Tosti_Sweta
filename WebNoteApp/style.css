@@ -1,0 +1,19 @@
+div.iambutton {
+    background-color: rgb(3, 99, 4);
+    overflow: auto;
+    font-size: large;
+    font-family: sans-serif;
+  }
+  
+  div.iambutton a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.iambutton a:hover {
+    background-color: rgb(83, 3, 3);
+  }
+
