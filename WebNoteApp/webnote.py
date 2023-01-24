@@ -1,15 +1,12 @@
 
-import flask
+from flask import Flask, render_template, url_for
 
-app = flask.Flask("webnote")
+app = Flask("webnote")
 
 
-# def unload_fun():
-#     localst
 
 @app.route("/")
 def home_page():
-    user_name = input("Please give your name... ")
-    return user_name
+    return render_template("index.html")
 
 
