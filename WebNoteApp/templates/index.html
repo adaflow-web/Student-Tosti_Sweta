@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="C:\Users\sweta\exte_school\code\exetension_sc\WebNoteApp\style.css">
-
+    <link rel="stylesheet" href="{{url_for('static', filename = '/static/css/main.css')}}">
+    
 </head>
 <!-- <body onunload = "unload_fun"> -->
     <div class="iambutton">    
@@ -16,5 +16,7 @@
     </div>
     <form action="user_name"></form>
         <p><input type="text" name="user_name"></p>
+
+    <script src="{{ url_for('static', filename = '/static/webnote.js')}}"></script>
 </body>
 </html>
