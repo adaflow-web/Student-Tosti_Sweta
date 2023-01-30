@@ -9,7 +9,19 @@ def home_page():
 
 @app.route("/username", methods=[ "GET", "POST" ])
 def username():
-    return render_template("username.html", user_name = request.args["user_name"])
+    return render_template("username.html", user = request.args["user_name"])
+
+@app.route("/addnote")
+def add_note():
+    return render_template("addnote.html",user = 1)
+
+@app.route("/viewnotes")
+def add_note():
+    return render_template("addnote.html",user = 1)
+
+@app.route("/search")
+def add_note():
+    return render_template("addnote.html",user = 1)    
 
 if __name__ == "__main__":
     app.run(debug=True)
