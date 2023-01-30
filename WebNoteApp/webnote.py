@@ -13,15 +13,19 @@ def username():
 
 @app.route("/addnote")
 def add_note():
-    return render_template("addnote.html",user = 1)
+    return render_template("addnote.html")
 
 @app.route("/viewnotes")
-def add_note():
-    return render_template("addnote.html",user = 1)
+def viewnotes():
+    return render_template("viewnotes.html")
 
 @app.route("/search")
-def add_note():
-    return render_template("addnote.html",user = 1)    
+def search():
+    return render_template("search.html")
+    
+@app.route("/modifynote")
+def modifynote():
+    return render_template("modifynote.html")    
 
 if __name__ == "__main__":
     app.run(debug=True)
