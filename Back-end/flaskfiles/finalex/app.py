@@ -10,12 +10,12 @@ db = SQLAlchemy(app)
 
 class Addnote(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), primary_key=False)
-    desc = db.Column(db.String(500), primary_key=True)
+    title = db.Column(db.String(200), nullable=False)
+    desc = db.Column(db.String(500), nullable=False)
     date_created = db.Column(db.DateTime, default = datetime.utcnow)
 
     def __repr__(self) -> str:
-        return str(self.sno) + self.title
+        return str(self.sno) + " - " + self.title
     
 @app.route("/")
 @app.route("/home")
@@ -32,12 +32,7 @@ def addnote():
         db.session.add(note)
         db.session.commit()
     allnotes = Addnote.query.all()
-    return render_template("notes.html", allnotes=allnotes)
-
-@app.route("/notes")
-def notes():
-    
-    return render_template("notes.html")
+    return render_template("addnote.html", allnotes=allnotes)
 
 @app.route("/update/<int:sno>", methods=["GET", "POST"])
 def update(sno):
