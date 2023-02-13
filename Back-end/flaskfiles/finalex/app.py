@@ -46,7 +46,7 @@ def update(sno):
         note.desc = desc
         db.session.add(note)
         db.session.commit()
-        return redirect("/notes")
+        return redirect("/addnote")
     note = Addnote.query.filter_by(sno=sno).first()
     return render_template("update.html", note=note)
 
@@ -55,7 +55,7 @@ def delete(sno):
     note = Addnote.query.filter_by(sno=sno).first()
     db.session.delete(note)
     db.session.commit()
-    return redirect("/notes")
+    return redirect("/addnote")
 
 if __name__ == "__main__":
     app.run(debug = True)

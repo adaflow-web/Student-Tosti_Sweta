@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<div class="container class = my-3">
+    <h2>My table</h2>
+    <table class="table">
+        <tbody>
+            {% if allnotes|length == 0 %}
+            <div class="alert alert-dark" role="alert">
+                No notes found. Add your first note.
+            </div>
+            {% else %}
+            <thead>
+                <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Note Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Date Created</th>
+                </tr>
+            </thead>
+            {% endif %}
+            {% for note in allnotes %}
+            <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ note.title }}</td>
+                <td>{{ note.desc }}</td>
+                <td>{{ note.date_created }}</td>
+                <td>
+                    <a href="/update/{{todo.sno}}" type="button" class="btn btn-outline-warning mx-1">Update</button>
+                    <a href="/delete/{{todo.sno}}" type="button" class="btn btn-outline-danger mx-1">Delete</button>             
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock body %}
