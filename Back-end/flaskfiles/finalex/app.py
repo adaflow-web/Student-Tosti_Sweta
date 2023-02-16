@@ -5,6 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.config['WHOOSH_BASE'] ="whoosh"
 
 db = SQLAlchemy(app)
 
@@ -50,12 +51,27 @@ def update(sno):
     note = Addnote.query.filter_by(sno=sno).first()
     return render_template("update.html", note=note)
 
+
 @app.route("/delete/<int:sno>")
 def delete(sno): 
     note = Addnote.query.filter_by(sno=sno).first()
     db.session.delete(note)
     db.session.commit()
     return redirect("/addnote")
+
+
+@app.route("/search", methods=["POST"])
+def search():
+    if request.method == "POST":
+        form = request.form
+        search_value = form['searched']
+        search = "%{0}%".format(search_value)
+        result = Addnote.query.filter(Addnote.title.like(search)).all()
+        allnotes = Addnote.query.all()
+        return render_template('search.html', title=result, legend="Search results", allnotes=allnotes)
+    else:
+        return redirect('search.html', legend = "nothing found")
+
 
 if __name__ == "__main__":
     app.run(debug = True)
