@@ -11,7 +11,7 @@ function onloadFun() {
             localStorage.setItem("username", userName);
         }
         else if (userName == "") {
-            document.getElementById("username").innerHTML = s
+            document.getElementById("username").innerHTML = ""
         }
         else {
             return false;
