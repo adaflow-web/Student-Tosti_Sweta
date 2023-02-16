@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Search
+{% endblock title %}
+{% block body %}
+    
+{% if title %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for a in title %}
+            <tr>
+                <td>{{ title }}</td>
+                <td>{{ title.desc }}</td>
+                <td>{{ title.date_created }}</td> 
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+<div class="alert alert-dark" role="alert">
+    No search found.
+</div>
+{% endif %}
+   
+{% endblock  %}
+
+
+
+    
+
