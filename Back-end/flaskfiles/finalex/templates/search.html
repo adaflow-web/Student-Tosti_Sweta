@@ -6,6 +6,8 @@
 {% block body %}
     
 {% if title %}
+<div class="container my-3">
+    <h2>{{ legend }}</h2>
     <table class="table">
         <thead>
             <tr>
@@ -26,6 +28,7 @@
             {% endfor %}
         </tbody>
     </table>
+</div>
 {% else %}
 <div class="alert alert-dark" role="alert">
     No search found.
