@@ -16,7 +16,7 @@ class Addnote(db.Model):
     date_created = db.Column(db.DateTime, default = datetime.utcnow)
 
     def __repr__(self) -> str:
-        return str(self.sno) + " - " + self.title
+        return sself.title
     
 @app.route("/")
 @app.route("/home")
