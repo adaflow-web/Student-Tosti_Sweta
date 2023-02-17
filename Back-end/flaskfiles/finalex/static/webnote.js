@@ -2,7 +2,12 @@
 function onloadFun() {
     if (localStorage.length > 0) {
         const user = localStorage.getItem("username");
-        return document.getElementById("username").innerHTML = " Welcome " + user;
+        if((user != undefined) && (user != null)) {
+            return document.getElementById("username").innerHTML = " Welcome " + user;
+        }
+        else{
+            return false;
+        }
     }
     else {
         let userName = prompt("Please enter your name", "");
@@ -11,7 +16,7 @@ function onloadFun() {
             localStorage.setItem("username", userName);
         }
         else if (userName == "") {
-            document.getElementById("username").innerHTML = s
+            document.getElementById("username").innerHTML = ""
         }
         else {
             return false;
