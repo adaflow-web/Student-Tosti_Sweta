@@ -72,6 +72,11 @@ def search():
     else:
         return redirect('search.html', legend = "nothing found")
 
+@app.route("/notes", methods=["GET", "POST"])
+def notes():
+    allnotes = Addnote.query.all()
+    
+    return render_template("notes.html", allnotes=allnotes)
 
 if __name__ == "__main__":
     app.run(debug = True)
