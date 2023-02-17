@@ -1,33 +1,19 @@
-
 function onloadFun() {
     if (localStorage.length > 0) {
         const user = localStorage.getItem("username");
-        if((user != undefined) && (user != null)) {
-            return document.getElementById("username").innerHTML = " Welcome " + user;
-        }
-        else{
-            return false;
-        }
+        return document.getElementById("username").innerHTML = " Welcome " + user;    
     }
     else {
-        let userName = prompt("Please enter your name", "");
-        if (userName != null) {
-            document.getElementById("username").innerHTML = "Hello " + userName;
-            localStorage.setItem("username", userName);
+        let user = prompt("Please enter your name", "");
+
+        while(user == ""){
+            user = prompt("Please enter your name", "");    
         }
-        else if (userName == "") {
-            document.getElementById("username").innerHTML = ""
-        }
-        else {
-            return false;
-        }
+        
+        if(user != null){
+            document.getElementById("username").innerHTML = "Hello " + user;
+            localStorage.setItem("username", user);
+        }       
     }
 }
 window.onload = onloadFun;
-
-
-
-
-
-
-
